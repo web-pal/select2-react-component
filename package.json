@@ -1,0 +1,55 @@
+{
+  "name": "select2-react-component",
+  "version": "0.0.1",
+  "description": "A component for select2 4.0.0",
+  "main": "lib/component.js",
+  "author": "Vladimir Pal",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bedoit/select2-react-component"
+  },
+  "dependencies": {
+    "jquery": "^2.1.3",
+    "jquery.mousewheel": "^3.1.9",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "select2": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babelify": "^6.4.0",
+    "browser-sync": "^2.9.11",
+    "browserify": "^12.0.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-if": "^2.0.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "lodash": "^3.10.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.0"
+  },
+  "scripts": {
+    "compile": "babel --stage 0 -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "keywords": [
+    "combobox",
+    "form",
+    "input",
+    "multiselect",
+    "react",
+    "react-component",
+    "select",
+    "select2",
+    "select2-4"
+  ]
+}
