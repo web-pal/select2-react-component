@@ -48,7 +48,7 @@ export default React.createClass({
 
     function makeEventHandler(handlers, eventName) {
       return $(elem).on(eventName, (ev) => {
-        for (let eventHandler in handlers) {
+        for (let eventHandler of handlers) {
           if (typeof eventHandler === 'function') {
             eventHandler.apply(null, [ev, $(elem).select2('data'), $(elem).val()]);
           }
