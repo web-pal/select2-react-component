@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React, { cloneElement } from 'react';
 import ReactDOM from 'react-dom';
-require('Select2');
+require('select2');
 
 export default React.createClass({
   propTypes: {
