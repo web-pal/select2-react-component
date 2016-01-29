@@ -38,6 +38,7 @@ export default React.createClass({
 
   runSelect2(data=this.props.data) {
     let elem = $(ReactDOM.findDOMNode(this));
+    $(elem).unbind();
     this._select2 = elem.select2(data);
 
     // Dirty hack for react-bootstrap modal window
