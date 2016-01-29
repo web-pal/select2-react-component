@@ -1,6 +1,6 @@
 {
   "name": "select2-react-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component for select2 4.0.0",
   "main": "lib/component.js",
   "author": "Vladimir Pal",
